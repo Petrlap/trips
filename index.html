@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Trips</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta name="description" content="Author: P.V. Lapatsinski" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="frame">
+      <header class="navbar">
+        <nav class="navbar__trips">
+          <a href="" class="navbar__title">Поездки</a>
+        </nav>
+        <button class="navbar__button">
+          <span class="navbar__name"> Заболоцкий К.О </span>
+          <svg
+            class="navbar__icon"
+            width="10.7"
+            height="9.3"
+            viewBox="0 0 22 20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+          >
+            <path
+              d="M0.667,0.667C0.313,0.667 -0.026,0.807 -0.276,1.057C-0.526,1.307 -0.667,1.646 -0.667,2L-0.667,18C-0.667,18.354 -0.526,18.693 -0.276,18.943C-0.026,19.193 0.313,19.333 0.667,19.333C1.02,19.333 1.359,19.193 1.61,18.943C1.86,18.693 2,18.354 2,18L2,2C2,1.646 1.86,1.307 1.61,1.057C1.359,0.807 1.02,0.667 0.667,0.667L0.667,0.667ZM14.391,13.057C14.148,13.309 14.013,13.646 14.016,13.995C14.02,14.345 14.16,14.679 14.407,14.926C14.654,15.174 14.989,15.314 15.338,15.317C15.688,15.32 16.025,15.186 16.276,14.943L20.276,10.943C20.526,10.693 20.666,10.354 20.666,10C20.666,9.646 20.526,9.307 20.276,9.057L16.276,5.057C16.153,4.93 16.006,4.828 15.843,4.759C15.681,4.689 15.506,4.652 15.329,4.65C15.152,4.649 14.976,4.683 14.812,4.75C14.648,4.817 14.499,4.916 14.374,5.041C14.249,5.166 14.15,5.315 14.083,5.479C14.016,5.643 13.982,5.818 13.984,5.995C13.985,6.172 14.022,6.347 14.092,6.51C14.162,6.673 14.263,6.82 14.391,6.943L16.115,8.667L6,8.667C5.646,8.667 5.307,8.807 5.057,9.057C4.807,9.307 4.667,9.646 4.667,10C4.667,10.354 4.807,10.693 5.057,10.943C5.307,11.193 5.646,11.333 6,11.333L16.115,11.333L14.391,13.057L14.391,13.057Z"
+              clip-rule="evenodd"
+              fill-rule="evenodd"
+              fill="#0E73F6"
+              stroke="#0E73F6"
+              stroke-width="1"
+              stroke-miterlimit="3.999327"
+            />
+          </svg>
+        </button>
+      </header>
+      <aside class="menu-bar">
+        <section class="menu">
+          <h2 class="menu__title">Мои поездки</h2>
+          <button class="menu__button">
+            <svg
+              class="menu__plus"
+              viewBox="0 0 20 20"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+            >
+              <path
+                d="M10,0C10.53,0 11.039,0.211 11.414,0.586C11.789,0.961 12,1.47 12,2L12,8L18,8C18.53,8 19.039,8.211 19.414,8.586C19.789,8.961 20,9.47 20,10C20,10.53 19.789,11.039 19.414,11.414C19.039,11.789 18.53,12 18,12L12,12L12,18C12,18.53 11.789,19.039 11.414,19.414C11.039,19.789 10.53,20 10,20C9.47,20 8.961,19.789 8.586,19.414C8.211,19.039 8,18.53 8,18L8,12L2,12C1.47,12 0.961,11.789 0.586,11.414C0.211,11.039 0,10.53 0,10C0,9.47 0.211,8.961 0.586,8.586C0.961,8.211 1.47,8 2,8L8,8L8,2C8,1.47 8.211,0.961 8.586,0.586C8.961,0.211 9.47,0 10,0L10,0Z"
+                clip-rule="evenodd"
+                fill-rule="evenodd"
+                fill="#FFFFFF"
+              />
+            </svg>
+            <span class="menu__name"> Оформить поездку </span>
+          </button>
+        </section>
+        <section class="filters">
+          <div class="filters__box">
+            <div class="periods">
+              <div class="periods-from">
+                <label class="periods-from__title">Период с:</label>
+                <button class="periods-from__button">
+                  <span class="periods-from__value"> 22.02.2024 </span>
+                  <div class="periods-from__svg">
+                    <svg
+                      class="periods-from__cross"
+                      viewBox="0 0 26 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                    >
+                      <path
+                        d="M0.586,0.586C0.961,0.211 1.47,0 2,0C2.53,0 3.039,0.211 3.414,0.586L12,9.172L20.586,0.586C20.77,0.395 20.991,0.243 21.235,0.138C21.479,0.033 21.742,-0.022 22.007,-0.025C22.273,-0.027 22.536,0.024 22.782,0.124C23.028,0.225 23.251,0.373 23.439,0.561C23.627,0.749 23.775,0.972 23.876,1.218C23.976,1.464 24.027,1.727 24.024,1.993C24.022,2.258 23.967,2.521 23.862,2.765C23.757,3.009 23.605,3.229 23.414,3.414L14.828,12L23.414,20.586C23.778,20.963 23.98,21.468 23.975,21.993C23.971,22.517 23.76,23.019 23.39,23.39C23.019,23.76 22.517,23.971 21.993,23.975C21.468,23.98 20.963,23.778 20.586,23.414L12,14.828L3.414,23.414C3.037,23.778 2.532,23.98 2.007,23.975C1.483,23.971 0.981,23.76 0.61,23.39C0.24,23.019 0.029,22.517 0.025,21.993C0.02,21.468 0.222,20.963 0.586,20.586L9.172,12L0.586,3.414C0.211,3.039 0,2.53 0,2C0,1.47 0.211,0.961 0.586,0.586L0.586,0.586Z"
+                        clip-rule="evenodd"
+                        fill-rule="evenodd"
+                        fill="#B0BABF"
+                      />
+                    </svg>
+                    <svg
+                      class="periods-from__calendar"
+                      viewBox="0 0 32 32"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                    >
+                      <path
+                        d="M8,0C7.47,0 6.961,0.211 6.586,0.586C6.211,0.961 6,1.47 6,2L6,4L4,4C2.939,4 1.922,4.421 1.172,5.172C0.421,5.922 0,6.939 0,8L0,28C0,29.061 0.421,30.078 1.172,30.828C1.922,31.579 2.939,32 4,32L28,32C29.061,32 30.078,31.579 30.828,30.828C31.579,30.078 32,29.061 32,28L32,8C32,6.939 31.579,5.922 30.828,5.172C30.078,4.421 29.061,4 28,4L26,4L26,2C26,1.47 25.789,0.961 25.414,0.586C25.039,0.211 24.53,0 24,0C23.47,0 22.961,0.211 22.586,0.586C22.211,0.961 22,1.47 22,2L22,4L10,4L10,2C10,1.47 9.789,0.961 9.414,0.586C9.039,0.211 8.53,0 8,0L8,0ZM8,10C7.47,10 6.961,10.211 6.586,10.586C6.211,10.961 6,11.47 6,12C6,12.53 6.211,13.039 6.586,13.414C6.961,13.789 7.47,14 8,14L24,14C24.53,14 25.039,13.789 25.414,13.414C25.789,13.039 26,12.53 26,12C26,11.47 25.789,10.961 25.414,10.586C25.039,10.211 24.53,10 24,10L8,10Z"
+                        clip-rule="evenodd"
+                        fill-rule="evenodd"
+                        fill="#B0BABF"
+                      />
+                    </svg>
+                  </div>
+                </button>
+              </div>
+              <div class="periods-to">
+                <label class="periods-to__title">по:</label>
+                <button class="periods-to__button">
+                  <span class="periods-to__value">Выбрать...</span>
+                  <svg
+                    class="periods-to__calendar"
+                    viewBox="0 0 32 32"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                  >
+                    <path
+                      d="M8,0C7.47,0 6.961,0.211 6.586,0.586C6.211,0.961 6,1.47 6,2L6,4L4,4C2.939,4 1.922,4.421 1.172,5.172C0.421,5.922 0,6.939 0,8L0,28C0,29.061 0.421,30.078 1.172,30.828C1.922,31.579 2.939,32 4,32L28,32C29.061,32 30.078,31.579 30.828,30.828C31.579,30.078 32,29.061 32,28L32,8C32,6.939 31.579,5.922 30.828,5.172C30.078,4.421 29.061,4 28,4L26,4L26,2C26,1.47 25.789,0.961 25.414,0.586C25.039,0.211 24.53,0 24,0C23.47,0 22.961,0.211 22.586,0.586C22.211,0.961 22,1.47 22,2L22,4L10,4L10,2C10,1.47 9.789,0.961 9.414,0.586C9.039,0.211 8.53,0 8,0L8,0ZM8,10C7.47,10 6.961,10.211 6.586,10.586C6.211,10.961 6,11.47 6,12C6,12.53 6.211,13.039 6.586,13.414C6.961,13.789 7.47,14 8,14L24,14C24.53,14 25.039,13.789 25.414,13.414C25.789,13.039 26,12.53 26,12C26,11.47 25.789,10.961 25.414,10.586C25.039,10.211 24.53,10 24,10L8,10Z"
+                      clip-rule="evenodd"
+                      fill-rule="evenodd"
+                      fill="#B0BABF"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <button class="search">
+              <span class="search__text">Поиск...</span>
+              <svg
+                class="search__loupe"
+                viewBox="0 0 32 32"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <path
+                  d="M12,4.002C9.878,4.002 7.843,4.844 6.343,6.345C4.843,7.845 4,9.88 4,12.002C4,14.123 4.843,16.158 6.343,17.658C7.843,19.159 9.878,20.002 12,20.002C14.122,20.002 16.157,19.159 17.657,17.658C19.157,16.158 20,14.123 20,12.002C20,9.88 19.157,7.845 17.657,6.345C16.157,4.844 14.122,4.002 12,4.002ZM0,12.002C0,10.113 0.445,8.251 1.3,6.567C2.155,4.883 3.396,3.425 4.921,2.311C6.446,1.196 8.212,0.458 10.076,0.155C11.94,-0.148 13.85,-0.006 15.649,0.568C17.448,1.143 19.086,2.133 20.43,3.46C21.774,4.787 22.786,6.412 23.384,8.204C23.981,9.995 24.147,11.903 23.869,13.771C23.59,15.639 22.874,17.414 21.78,18.954L31.414,28.588C31.778,28.965 31.98,29.47 31.975,29.994C31.971,30.519 31.76,31.02 31.39,31.391C31.019,31.762 30.517,31.972 29.993,31.977C29.468,31.981 28.963,31.78 28.586,31.416L18.954,21.784C17.159,23.06 15.047,23.818 12.849,23.974C10.652,24.13 8.454,23.678 6.497,22.667C4.539,21.657 2.897,20.128 1.751,18.246C0.606,16.365 0,14.204 0,12.002L0,12.002Z"
+                  clip-rule="evenodd"
+                  fill-rule="evenodd"
+                  fill="#B0BABF"
+                />
+              </svg>
+            </button>
+            <button class="reset">
+              <svg
+                class="reset__close"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <path
+                  d="M10,12.828L3.414,19.414L0.586,16.586L7.172,10L0.586,3.414L3.414,0.586L10,7.172L16.586,0.586L19.414,3.414L12.828,10L19.414,16.586L16.586,19.414L10,12.828Z"
+                  clip-rule="evenodd"
+                  fill-rule="evenodd"
+                  fill="#4094F7"
+                />
+              </svg>
+              <span class="reset__title">Сбросить все</span>
+            </button>
+          </div>
+          <div class="checkbox">
+            <div class="checkbox__rectangle"></div>
+            <label class="checkbox__title">Показать архивные поездки</label>
+          </div>
+        </section>
+      </aside>
+      <div class="gorizontal-scroll">
+        <div class="gorizontal-scroll__rectangle"></div>
+      </div>
+      <main class="container">
+        <section class="cards">
+          <article class="card">
+            <div class="box">
+              <div class="trip">
+                <label class="trip__name">№ поездки</label>
+                <button class="trip__button">000115</button>
+              </div>
+              <div class="dates">
+                <label class="dates__name">Дата поездки</label>
+                <span class="dates__value"> 22.02.2024 - 27.02.2024 </span>
+              </div>
+              <div class="price">
+                <label class="price__name">Сумма, план</label>
+                <span class="price__value"> 29 400,00 </span>
+              </div>
+              <div class="actual-price">
+                <label class="actual-price__name">Сумма, факт</label>
+                <span class="actual-price__value"> 29 400,00 </span>
+              </div>
+              <div class="city">
+                <label class="city__name">Город</label>
+                <span class="city__value">
+                  Москва, Ярославль, Ижевск, Владимир
+                </span>
+              </div>
+            </div>
+            <div class="status">
+              <label class="status__name">Статус</label>
+              <button class="status__button">Документы</button>
+            </div>
+          </article>
+          <article class="card">
+            <div class="box">
+              <div class="trip">
+                <label class="trip__name">№ поездки</label>
+                <button class="trip__button">000117</button>
+              </div>
+              <div class="dates">
+                <label class="dates__name">Дата поездки</label>
+                <span class="dates__value"> 22.02.2024 - 27.02.2024 </span>
+              </div>
+              <div class="price">
+                <label class="price__name">Сумма, план</label>
+                <span class="price__value"> 29 400,00 </span>
+              </div>
+              <div class="actual-price">
+                <label class="actual-price__name">Сумма, факт</label>
+                <span class="actual-price__value"> 29 400,00 </span>
+              </div>
+              <div class="city">
+                <label class="city__name">Город</label>
+                <span class="city__value">Москва</span>
+              </div>
+            </div>
+            <div class="status">
+              <label class="status__name">Статус</label>
+              <button class="status__button">Документы</button>
+            </div>
+          </article>
+          <article class="card">
+            <div class="box">
+              <div class="trip">
+                <label class="trip__name">№ поездки</label>
+                <button class="trip__button">000074</button>
+              </div>
+              <div class="dates">
+                <label class="dates__name">Дата поездки</label>
+                <span class="dates__value"> 22.02.2024 - 27.02.2024 </span>
+              </div>
+              <div class="price">
+                <label class="price__name">Сумма, план</label>
+                <span class="price__value"> 29 400,00 </span>
+              </div>
+              <div class="actual-price">
+                <label class="actual-price__name">Сумма, факт</label>
+                <span class="actual-price__value"> 29 400,00 </span>
+              </div>
+              <div class="city">
+                <label class="city__name">Город</label>
+                <span class="city__value"
+                  >Кременчуг-Константиновское, Петропавловск-Камчатский,
+                  Новосибирск, Волгоград</span
+                >
+              </div>
+            </div>
+            <div class="status">
+              <label class="status__name">Статус</label>
+              <button class="status__button">Документы</button>
+            </div>
+          </article>
+          <article class="card">
+            <div class="box">
+              <div class="trip">
+                <label class="trip__name">№ поездки</label>
+                <button class="trip__button">000115</button>
+              </div>
+              <div class="dates">
+                <label class="dates__name">Дата поездки</label>
+                <span class="dates__value"> 22.02.2024 - 27.02.2024 </span>
+              </div>
+              <div class="price">
+                <label class="price__name">Сумма, план</label>
+                <span class="price__value"> 29 400,00 </span>
+              </div>
+              <div class="actual-price">
+                <label class="actual-price__name">Сумма, факт</label>
+                <span class="actual-price__value"> 29 400,00 </span>
+              </div>
+              <div class="city">
+                <label class="city__name">Город</label>
+                <span class="city__value">
+                  Москва, Ярославль, Ижевск, Владимир
+                </span>
+              </div>
+            </div>
+            <div class="status">
+              <label class="status__name">Статус</label>
+              <button class="status__button">Документы</button>
+            </div>
+          </article>
+          <article class="card">
+            <div class="box">
+              <div class="trip">
+                <label class="trip__name">№ поездки</label>
+                <button class="trip__button">000211</button>
+              </div>
+              <div class="dates">
+                <label class="dates__name">Дата поездки</label>
+                <span class="dates__value"> 22.02.2024 - 27.02.2024 </span>
+              </div>
+              <div class="price">
+                <label class="price__name">Сумма, план</label>
+                <span class="price__value"> 29 400,00 </span>
+              </div>
+              <div class="actual-price">
+                <label class="actual-price__name">Сумма, факт</label>
+                <span class="actual-price__value"> 29 400,00 </span>
+              </div>
+              <div class="city">
+                <label class="city__name">Город</label>
+                <span class="city__value">
+                  Москва, Ярославль, Ижевск, Владимир
+                </span>
+              </div>
+            </div>
+            <div class="status">
+              <label class="status__name">Статус</label>
+              <button class="status__button">Документы</button>
+            </div>
+          </article>
+          <article class="card">
+            <div class="box">
+              <div class="trip">
+                <label class="trip__name">№ поездки</label>
+                <button class="trip__button">000118</button>
+              </div>
+              <div class="dates">
+                <label class="dates__name">Дата поездки</label>
+                <span class="dates__value"> 22.02.2024 - 27.02.2024 </span>
+              </div>
+              <div class="price">
+                <label class="price__name">Сумма, план</label>
+                <span class="price__value"> 29 400,00 </span>
+              </div>
+              <div class="actual-price">
+                <label class="actual-price__name">Сумма, факт</label>
+                <span class="actual-price__value"> 29 400,00 </span>
+              </div>
+              <div class="city">
+                <label class="city__name">Город</label>
+                <span class="city__value">
+                  Москва, Ярославль, Ижевск, Владимир
+                </span>
+              </div>
+            </div>
+            <div class="status">
+              <label class="status__name">Статус</label>
+              <button class="status__button">Документы</button>
+            </div>
+          </article>
+          <article class="card">
+            <div class="box">
+              <div class="trip">
+                <label class="trip__name">№ поездки</label>
+                <button class="trip__button">000119</button>
+              </div>
+              <div class="dates">
+                <label class="dates__name">Дата поездки</label>
+                <span class="dates__value"> 22.02.2024 - 27.02.2024 </span>
+              </div>
+              <div class="price">
+                <label class="price__name">Сумма, план</label>
+                <span class="price__value"> 29 400,00 </span>
+              </div>
+              <div class="actual-price">
+                <label class="actual-price__name">Сумма, факт</label>
+                <span class="actual-price__value"> 29 400,00 </span>
+              </div>
+              <div class="city">
+                <label class="city__name">Город</label>
+                <span class="city__value">
+                  Москва, Ярославль, Ижевск, Владимир
+                </span>
+              </div>
+            </div>
+            <div class="status">
+              <label class="status__name">Статус</label>
+              <button class="status__button">Документы</button>
+            </div>
+          </article>
+          <article class="card">
+            <div class="box">
+              <div class="trip">
+                <label class="trip__name">№ поездки</label>
+                <button class="trip__button">000120</button>
+              </div>
+              <div class="dates">
+                <label class="dates__name">Дата поездки</label>
+                <span class="dates__value"> 22.02.2024 - 27.02.2024 </span>
+              </div>
+              <div class="price">
+                <label class="price__name">Сумма, план</label>
+                <span class="price__value"> 29 400,00 </span>
+              </div>
+              <div class="actual-price">
+                <label class="actual-price__name">Сумма, факт</label>
+                <span class="actual-price__value"> 29 400,00 </span>
+              </div>
+              <div class="city">
+                <label class="city__name">Город</label>
+                <span class="city__value">
+                  Москва, Ярославль, Ижевск, Владимир
+                </span>
+              </div>
+            </div>
+            <div class="status">
+              <label class="status__name">Статус</label>
+              <button class="status__button">Документы</button>
+            </div>
+          </article>
+          <article class="card">
+            <div class="box">
+              <div class="trip">
+                <label class="trip__name">№ поездки</label>
+                <button class="trip__button">000133</button>
+              </div>
+              <div class="dates">
+                <label class="dates__name">Дата поездки</label>
+                <span class="dates__value"> 22.02.2024 - 27.02.2024 </span>
+              </div>
+              <div class="price">
+                <label class="price__name">Сумма, план</label>
+                <span class="price__value"> 29 400,00 </span>
+              </div>
+              <div class="actual-price">
+                <label class="actual-price__name">Сумма, факт</label>
+                <span class="actual-price__value"> 29 400,00 </span>
+              </div>
+              <div class="city">
+                <label class="city__name">Город</label>
+                <span class="city__value">
+                  Москва, Ярославль, Ижевск, Владимир
+                </span>
+              </div>
+            </div>
+            <div class="status">
+              <label class="status__name">Статус</label>
+              <button class="status__button">Документы</button>
+            </div>
+          </article>
+        </section>
+        <div class="scroll"><div class="scroll__rectangle"></div></div>
+      </main>
+    </div>
+  </body>
+</html>
